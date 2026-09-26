@@ -1,0 +1,13 @@
+# Dependencies for the Python scripts in this toolkit.
+#
+# backup/backup_database.py uses only the standard library (no entry needed).
+#
+# raspberry-pi/fan_speed_control.py (GPIO access on a Raspberry Pi):
+RPi.GPIO
+
+# media/movie_quality_analyzer.py (reads video metadata via ffprobe):
+ffmpeg-python
+
+# Note: ffmpeg-python only wraps the command-line tools. media/movie_quality_analyzer.py
+# also requires the ffmpeg/ffprobe binaries to be installed separately and available on
+# PATH (e.g. "apt install ffmpeg" / "brew install ffmpeg"); they are not installed by pip.

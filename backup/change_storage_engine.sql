@@ -1,0 +1,4 @@
+SELECT CONCAT('ALTER TABLE ', TABLE_NAME,' ENGINE=InnoDB;') AS SqlStatement
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = 'database'
+AND ENGINE = 'MyISAM';
